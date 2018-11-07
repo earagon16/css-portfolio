@@ -1,35 +1,73 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
+html{
   font-size: 10px;
+  /* background-color: #1F1F1F; */
 }
 
-body {
-  /* display: grid;
-  grid-template-areas:
-  "navbar"
-  "intro"
-  "elena"
-  "bio";
-  grid-template-columns: 12fr; */
+/* General Text */
+
+h1{
+  color: #8F8ACD;
+  font-family: "Champagne & Limousines";
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  margin-top: 4rem;
+  text-align: left;
 }
 
-.navbar {
-  grid-area: navbar;
-  background-image: url("../images/header-background.png");
-  height: 10.4rem;
-}
-
-.navigation{
+h2 {
   color: #8B8100;
-  text-align: right;
-  display:inline-flex;
-  float: right;
-  margin-top: 5.3rem;
-  font-size: 1.5rem;
+  font-family:"Madeleina Sans";
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  margin-top: 4rem;
+}
+
+h4{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+p{
+  color: #2a2a2a;
   font-family: "WellrockSlab";
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 170%;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+a {
+  color: #8F8ACD;
+  font-family: "WellrockSlabBold";
+  font-weight: bold;
+  text-decoration: none;
+}
+
+br {
+  line-height: .2rem;
+}
+
+.navbar{
+  background-image: url(../images/mobile-header-rectangle.png);
+  height: 10.4rem;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.navigation p{
+  color: #8B8100;
+  display: inline-flex;
+  float: right;
+  font-family: "WellrockSlab";
+  font-size: 1.5rem;
+  margin-left: 0rem;
+  margin-top: 5.3rem;
+  text-align: right;
 }
 
 .about{
@@ -44,197 +82,179 @@ body {
   margin-right: 3rem;
 }
 
-
 .personal-logo{
-  padding-top: 2rem;
   margin-left: 3.8rem;
+  padding-top: 2rem;
   width: 30%;
 }
 
-.hero{
-  background-image: url("../images/mobile-arrow1.png");
+/* Trunk Summary */
+
+.trunk-summary{
+  background-image: url("../images/mobile-summary-background.png");
   background-repeat: no-repeat;
-  padding-bottom: 5rem;
 }
 
-.intro{
-  grid-area: intro;
-  font-size: 6rem;
-  padding-left: 3.8rem;
-  padding-top: 2rem;
-  margin-bottom: 3.8rem;
+section.trunk-title h1{
   color: #8B8100;
   font-family: "Champagne & Limousines";
-  font-weight: bold;
+  font-size: 7.5rem;
+  margin-bottom: auto;
+  margin-top: 2rem;
+  text-align: center;
 }
 
-hr {
-  width: 75%;
-  align-items: left;
-  margin-top:auto;
+
+.trunk-underline{
+  align-items: center;
+  margin-top: auto;
+  width: 30%;
 }
 
-.elena {
-  grid-area: elena;
-  font-size: 5rem;
-  margin-left: 3.8rem;
-  margin-bottom: 4rem;
+.trunk-image{
+  display: block;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding-top: 4.6rem;
+  width: 80%;
+}
+
+
+.prototype-link{
   color: #8F8ACD;
-  font-family: "Madeleina Sans";
-  letter-spacing: .2rem;
-}
-
-.bio {
-  grid-area: bio;
-  font-size: 1.9rem;
-  padding-bottom: 3rem;
-  padding-left: 3.8rem;
-  padding-right: 3.8rem;
-  color: #C5C5C5;
-  line-height: 160%;
-  font-family: "WellrockSlab";
-  letter-spacing: .15rem;
-  margin-bottom: 1rem;
-}
-
-.featured {
-  font-family: "Champagne & Limousines";
-  font-size: 7.5rem;
-  color: #8B8100;
-  text-align: center;
-}
-
-.trunk {
-  float: left;
-  background-image: url("../images/mobile-trunk-screenshot.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  letter-spacing: .4rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-
-.trunk h1{
-  color: #8B8100;
-  font-family:"Madeleina Sans";
-  font-size: 7rem;
-  padding-top: 2.5rem;
-  text-align: center;
-  width: auto;
-}
-
-.trunk h3{
-  color: #fff;
-  font-family: "Madeleina Sans";
-  font-size: 2.5rem;
-  padding-top: 3rem;
-  padding-bottom: 2.5rem;
-  padding-left: 3.8rem;
-  padding-right: 3.8rem;
-  letter-spacing: .3rem;
-}
-
-.trunk h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
   font-size: 2.2rem;
-  padding-bottom: 3rem;
-}
-
-.other-projects {
-  font-family: "Champagne & Limousines";
-  font-size: 7.5rem;
-  color: #8B8100;
-  margin-top: 7.1rem;
-}
-
-.project-one{
-  color: #8B8100;
-  text-align: center;
-}
-
-.project1-text{
+  font-weight: lighter;
+  letter-spacing: .2rem;
+  margin-bottom: 4rem;
   margin-top: 4rem;
-  background-image: url("../images/mobile-balloon.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.project1-text h1{
-  color: #8B8100;
-  padding-top: auto;
-  font-family:"Madeleina Sans";
-  font-size: 6rem;
   text-align: center;
-  padding-top: 4rem;
+  text-decoration: none;
 }
 
-.project1-text h3{
+.trunk-summary p {
   color: #fff;
-  font-family: "Madeleina Sans";
-  font-size: 2.5rem;
-  padding-top: 3rem;
-  padding-bottom: 2.2rem;
-  padding-left: 3.8rem;
-  padding-right: 3.8rem;
-  letter-spacing: .3rem;
-  text-align: center;
+  font-weight: 100;
 }
 
-.project1-text h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
-  font-size: 3rem;
-  padding-bottom: 7rem;
-  text-align: center;
+.trunk-summary h1{
+  margin-bottom: 4.7rem;
+  margin-top: 7rem;
 }
 
-.project2-text {
-  background-image: url("../images/mobile-clock.png");
-  background-repeat: no-repeat;
-  text-align: center;
+.trunk-summary h4{
+  display: none;
 }
 
-.project2-text h1{
-  color: #8B8100;
-  font-family:"Madeleina Sans";
-  font-size: 6rem;
-  padding-top: 4rem;
+section.problem h2{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  margin-top: 1rem;
+
 }
 
-.project2-text h3{
-  color: #fff;
-  font-family: "Madeleina Sans";
-  padding-top: 3rem;
-  padding-bottom: 2.2rem;
-  padding-left: 3.8rem;
-  padding-right: 3.8rem;
-  font-size: 2.5rem;
-  letter-spacing: .3rem;
+problem-sol h4{
+  display: none;
 }
 
-.project2-text h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
-  font-size: 3rem;
-  padding-bottom: 7rem;
+section.solution h2{
+  margin-bottom: 4rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
+
 }
 
+section.problem-sol{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+
+section.problem p{
+  margin-right: 4rem;
+  padding-right: 0rem;
+}
+
+section.solution p{
+  margin-left: 0rem;
+}
+
+
+/* Process */
+
+.process h1{
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+.research h2
+
+.competitive-analysis img{
+  float: right;
+}
+
+
+.competitive p{
+  float: left;
+  margin-bottom: 4rem;
+  width: 55%;
+}
+
+.competitive2 p{
+  float: left;
+}
+
+.user-personas h2{
+  display:inline-flex;
+}
+
+.wireframes-and-usability-tests h3{
+  font-size: 2rem;
+  color: #8F8ACD;
+  font-family:"Champagne & Limousines";
+  margin-bottom: 2rem;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  margin-top: 4rem;
+}
+
+.wireframes-and-usability-tests img{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+.branding img{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+.bw-trunk-logo img{
+  margin-left: 0rem;
+  margin-right:0rem;
+}
+
+.trunk-logos{
+  margin-bottom: 5rem;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+/* Footer */
 footer{
-  background-image: url("../images/mobile-footer-background.png");
-  background-repeat: no-repeat;
+    background-image: url("../images/mobile-footer-background.png");
+    background-repeat: no-repeat;
 }
 
-.footer-connect {
+.footer-connect h2{
   color: #9486B5;
   font-family: "Champagne & Limousines";
   font-size: 3rem;
-  text-align: center;
+  letter-spacing: .35rem;
   padding-top: 5rem;
-  letter-spacing: .35rem
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 2rem;
 }
 
 .linkedin {
@@ -257,256 +277,182 @@ footer{
   margin-right: 5.7rem;
 }
 
-.designed h4{
+.designed h5{
+  color: #fff;
+  font-family: "WellrockSlab";
   font-size: 1.3rem;
-  color: #fff;
   letter-spacing: .1rem;
-  font-family: "WellrockSlab";
-  text-align: center;
-  padding-top: 9rem;
-  padding-bottom: 30rem;
-}
-
-@media (min-width: 70rem) {
-  body {
-}
-
-}
-
-
-
-/* * {
-  box-sizing: border-box;
-} */
-
-/* html {
-  font-size: 10px;
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-  "navbar"
-  "intro"
-  "elena"
-  "bio";
-  grid-template-columns: 12fr;
-}
-
-.navbar {
-  grid-area: navbar;
-} */
-
-/* .hero {
-  background-image: url("../images/arrow1.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: inherit;
-}
-
-.intro {
-  grid-area: intro;
-  font-size: 9rem;
-  padding-bottom: 1rem;
-  padding-left: 20rem;
+  padding-bottom: 40rem;
   padding-top: 7rem;
-  color: #8B8100;
-  font-family: "Champagne & Limousines";
-  font-weight: bold;
-  letter-spacing: .35rem;
+  text-align: center;
 }
 
-hr {
-  width: 37%;
-  align-items: left;
-}
 
-.elena {
-  grid-area: elena;
-  font-size: 7.5rem;
-  padding-bottom: 3rem;
-  padding-left: 20rem;
-  margin-bottom: 1rem;
+
+
+
+
+/* html{
+  font-size: 10px;
+} */
+
+
+/* General Text */
+
+/* h1{
   color: #8F8ACD;
-  font-family: "Madeleina Sans";
+  font-size: 7.5rem;
+  text-align: left;
+  font-family: "Champagne & Limousines";
+  margin-left: 19.8rem;
+  margin-right: 19.8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 6.5rem;
+  color: #8B8100;
+  margin-left: 19.8rem;
+  margin-right: 19.8rem;
+  font-family:"Madeleina Sans";
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+}
+
+h4{
+  margin-left: 19.8rem;
+  margin-right: 19.8rem;
+}
+
+p{
+  color: #2a2a2a;
+  font-size: 2rem;
+  font-family: "WellrockSlab";
+  line-height: 170%;
+  margin-left: 19.8rem;
+  margin-right: 19.8rem;
+  font-weight: lighter;
+}
+
+a {
+  font-weight: bold;
+  color: #8F8ACD;
+  text-decoration: none;
+  font-family: "WellrockSlabBold";
+}
+
+br {
+  line-height: .2rem;
+}
+
+.navbar{
+
+} */
+
+/* Trunk Summary */
+
+/* .trunk-summary{
+  background-image: url("../images/summary-background.png");
+  background-repeat: no-repeat;
+}
+
+.trunk-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4.6rem;
+  width: 50%;
+}
+
+section.trunk-title h1{
+  font-family: "Champagne & Limousines";
+  font-size: 15rem;
+  text-align: center;
+  color: #8B8100;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+
+.trunk-underline{
+  align-items: center;
+  width: 40%;
+  margin-top: 0rem;
+}
+
+
+.prototype-link{
+  text-decoration: none;
+  color: #8F8ACD;
+  font-size: 3.5rem;
   letter-spacing: .2rem;
-}
-
-.bio {
-  grid-area: bio;
-  font-size: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 20rem;
-  padding-bottom: 13rem;
-  color: #ffffff;
-  line-height: 150%;
-  font-family: "WellrockSlab";
-  letter-spacing: .15rem;
-  margin-bottom: 5rem;
-}
-
-.featured-project{
-  font-family: "Champagne & Limousines";
-  font-size: 9rem;
-  color: #8B8100;
-}
-
-.featured {
-  color: #8B8100;
-  text-align: center; */
-/* }
-
-.trunk {
-  float: left;
-  background-image: url("../images/trunk-screenshot.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  font-weight: lighter;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   text-align: center;
-  letter-spacing: .4rem;
-  margin-left: 18.9rem;
-  margin-top: 8rem;
 }
 
-.trunk-image {
-  float: right;
-  margin-right: 18.9rem;
-  margin-top: 9.4rem;
-  width: 450px;
-  height: auto;
-}
-
-.trunk h1{
-  color: #8B8100;
-  font-family:"Madeleina Sans";
-  font-size: 7.5rem;
-  padding-top: 5rem;
-  text-align: center;
-  width: auto;
-}
-
-.trunk h3{
+.trunk-summary p {
   color: #fff;
-  font-family: "Madeleina Sans";
-  font-size: 3.5rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  letter-spacing: .3rem;
+  font-weight: 100;
 }
 
-.trunk h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
-  font-size: 3rem;
-  padding-bottom: 7rem;
+.trunk-summary h1{
+  margin-top: 7rem;
+  margin-bottom: 4.7rem;
 }
 
-.other-projects {
-  font-family: "Champagne & Limousines";
-  font-size: 9rem;
-  color: #8B8100;
-  margin-top: 8rem;
+section.problem h2{
+  margin-left: 19.8rem;
+  margin-right: 19.8rem;
+  margin-top: 3rem;
 
 }
 
-.project-one{
-  color: #8B8100;
-  text-align: center;
-  margin-bottom: 5rem;
+section.solution h2{
+  margin-left: 0rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+
 }
 
-.project1-text {
-  float: left;
-  background-image: url("../images/balloon.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  text-align: center;
-  letter-spacing: .4rem;
-  margin-left: 18.8rem;
-  width: 44rem;
-  height: auto;
+section.problem-sol{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 18rem;
 }
 
-.project1-text h1{
-  color: #8B8100;
-  font-family:"Madeleina Sans";
-  font-size: 7.5rem;
-  padding-top: 8rem;
+section.problem p{
+  margin-right: 4rem;
+  padding-right: 0rem;
 }
 
-.project1-text h3{
-  color: #fff;
-  font-family: "Madeleina Sans";
-  font-size: 3.5rem;
-  padding-top: 3rem;
-  padding-bottom: 4.5rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  letter-spacing: .3rem;
-}
+section.solution p{
+  margin-left: 0rem;
+} */
 
-.project1-text h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
-  font-size: 3rem;
-  padding-bottom: 7rem;
-}
 
-.project2-text {
-  float: right;
-  background-image: url("../images/clock.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  text-align: center;
-  letter-spacing: .4rem;
-  margin-right: 18.8rem;
-  width: 44rem;
-  height: auto;
-}
+/* Process */
 
-.project2-text h1{
-  color: #8B8100;
-  font-family:"Madeleina Sans";
-  font-size: 7.5rem;
-  padding-top: 8rem;
-}
 
-.project2-text h3{
-  color: #fff;
-  font-family: "Madeleina Sans";
-  font-size: 3.5rem;
-  padding-top: 3rem;
-  padding-bottom: 4.5rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  letter-spacing: .3rem;
-}
-
-.project2-text h4{
-  color: #9486B5;
-  font-family: "WellrockSlab";
-  font-size: 3rem;
-  padding-bottom: 7rem;
-}
-
-footer{
+/* Footer */
+/* footer{
     background-image: url("../images/footer-background.png");
     background-repeat: no-repeat;
 }
 
-.footer-connect {
+.footer-connect h1{
   color: #9486B5;
   font-family: "Champagne & Limousines";
   font-weight: bold;
   font-size: 6rem;
   text-align: center;
-  margin-top: 14rem;
+  padding-top: 14rem;
   margin-bottom: 7.2rem;
-  letter-spacing: .35rem
+  letter-spacing: .35rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 .linkedin {
@@ -536,9 +482,5 @@ footer{
   font-family: "WellrockSlab";
   text-align: center;
   margin-top: 22rem;
-  margin-bottom: 7rem;
-}
-
-@media (min-width: 70rem) {
-  body {
+  padding-bottom: 7rem;
 } */
