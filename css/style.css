@@ -420,10 +420,12 @@ hr{
 
 .hero {
   background-image: url("../images/arrow1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
   align-items: center;
 }
 
@@ -451,7 +453,7 @@ hr{
   line-height: 140%;
   font-family: "WellrockSlab";
   letter-spacing: .15rem;
-  /* margin-bottom: 1rem; */
+  /* margin-bottom: 50rem; */
 }
 
 .elena {
@@ -537,7 +539,7 @@ hr{
   float: left;
   background-image: url("../images/balloon.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   text-align: center;
   letter-spacing: .4rem;
@@ -588,13 +590,13 @@ hr{
   float: right;
   background-image: url("../images/clock.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   text-align: center;
   letter-spacing: .4rem;
   margin-right: 12.5%;
   margin-top: 1rem;
-  width: 36.5%;
+  width: 36%;
   height: auto;
 }
 
@@ -605,7 +607,8 @@ footer{
     background-repeat: no-repeat;
     margin-top: 38rem;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-connect h2{
