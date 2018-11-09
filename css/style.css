@@ -422,7 +422,7 @@ hr{
   background-image: url("../images/arrow1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   width: 100%;
   padding-bottom: 10rem;
   margin-bottom: 10rem;
@@ -608,7 +608,7 @@ footer{
     margin-top: 38rem;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 
 .footer-connect h2{
