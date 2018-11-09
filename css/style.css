@@ -49,8 +49,8 @@ body {
   background-image: url("../images/mobile-arrow1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 45rem;
-  padding-bottom: 6rem;
+  height: 40rem;
+  padding-bottom: 1rem;
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
@@ -113,7 +113,8 @@ hr {
 .trunk {
   background-image: url("../images/mobile-trunk-screenshot.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: auto;
   text-align: center;
   letter-spacing: .4rem;
   margin-top: 3rem;
@@ -128,6 +129,7 @@ hr {
   font-family:"Madeleina Sans";
   font-size: 7rem;
   padding-top: 2.5rem;
+  padding-left: 10rem;
   text-align: center;
   width: 100%;
 }
@@ -158,6 +160,7 @@ hr {
 
 .other-projects {
   font-family: "Champagne & Limousines";
+  clear: both;
   font-size: 7rem;
   color: #8B8100;
   margin-top: 7.1rem;
@@ -168,9 +171,11 @@ hr {
   display: none;
 }
 
-.project-one{
+.project-one h2{
   color: #8B8100;
   text-align: center;
+  font-size: 7rem;
+  padding-top: 1rem;
 }
 
 .project1-text{
@@ -463,7 +468,7 @@ hr{
   float: left;
   background-image: url("../images/trunk-screenshot.png");
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: cover;
   text-align: center;
   letter-spacing: .4rem;
   margin-left: 10%;
@@ -471,6 +476,7 @@ hr{
   margin-right: 1%;
   margin-top:4rem;
   width: 40%;
+  height: auto;
 }
 
 .trunk h2{
@@ -480,9 +486,10 @@ hr{
   font-size: 7rem;
   padding-top: 2.5rem;
   text-align: center;
-  width: 10rem;
-  padding-left: 7rem;
+  /* width: ; */
+  /* padding-left: 7rem; */
   margin: 0rem;
+  padding-left: 0rem;
 }
 
 .trunk h3{
@@ -491,11 +498,10 @@ hr{
   font-size: 2.5rem;
   padding-top: 3rem;
   padding-bottom: 2.5rem;
-  padding-left: 1.5rem;
-  padding-right: 3.8rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   letter-spacing: .3rem;
-  /* padding-left: 5rem; */
-  width: 30rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -532,19 +538,19 @@ hr{
   background-image: url("../images/balloon.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   letter-spacing: .4rem;
   margin-left: 12.5%;
   margin-top: 1rem;
-  width: 36.5%;
+  width: 36%;
   height: auto;
 }
 
 .other-projects h2{
   color: #8B8100;
   font-family:"Madeleina Sans";
-  font-size: 50%;
+  font-size: 6rem;
   padding-top: 8rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -555,28 +561,27 @@ hr{
   color: #8B8100;
   text-align: center;
   margin-bottom: 5rem;
-  /* float: left; */
   margin-left: 1rem;
-  font-size: 6rem;
+  font-size: 7rem;
+  font-family: "Champagne & Limousines";
 }
 
 .other-projects h3{
   color: #fff;
-  float: left;
+  text-align: center;
   font-family: "Madeleina Sans";
-  font-size: 30%;
+  font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   letter-spacing: .2rem;
 }
 
 .other-projects h4{
   color: #9486B5;
   font-family: "WellrockSlab";
-  font-size: 27%;
+  font-size: 2.2rem;
   padding-bottom: 7rem;
+  clear: both;
 }
 
 .project2-text {
@@ -584,7 +589,7 @@ hr{
   background-image: url("../images/clock.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   letter-spacing: .4rem;
   margin-right: 12.5%;
@@ -595,6 +600,7 @@ hr{
 
 
 footer{
+  clear: both;
     background-image: url("../images/footer-background.png");
     background-repeat: no-repeat;
     margin-top: 38rem;
@@ -644,6 +650,7 @@ footer{
   font-family: "WellrockSlab";
   text-align: center;
   margin-top: 3.5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 0rem;
+  padding-bottom: 10rem;
 }
 }
