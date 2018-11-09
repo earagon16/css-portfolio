@@ -1,0 +1,942 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  /* display: grid;
+  grid-template-areas:
+  "navbar"
+  "intro"
+  "elena"
+  "bio";
+  grid-template-columns: 12fr; */
+}
+
+.navbar {
+  background-image: url("../images/header-background.png");
+  background-size: cover;
+  height: 10.4rem;
+  width: 100%;
+}
+
+.navigation {
+  color: #8B8100;
+  text-align: right;
+  display:inline-flex;
+  float: right;
+  margin-top: 5.3rem;
+  font-size: 1.5rem;
+  font-family: "WellrockSlab";
+}
+
+.about{
+  margin-right: 2rem;
+}
+
+.projects{
+  margin-right: 2rem;
+}
+
+.connect{
+  margin-right: 3rem;
+}
+
+
+.personal-logo{
+  padding-top: 2rem;
+  margin-left: 3.8rem;
+  width: 30%;
+}
+
+.hero{
+  background-image: url("../images/mobile-arrow1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45rem;
+  padding-bottom: 6rem;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.intro{
+  grid-area: intro;
+  font-size: 6rem;
+  padding-top: 2rem;
+  margin-bottom: 3.8rem;
+  color: #8B8100;
+  font-family: "Champagne & Limousines";
+  font-weight: bold;
+}
+
+hr {
+  width: 75%;
+  float: left;
+  margin-top: auto;
+}
+
+.elena {
+  font-size: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+  color: #8F8ACD;
+  font-family: "Madeleina Sans";
+  letter-spacing: .2rem;
+}
+
+/* .elena h4{
+  display: none;
+} */
+
+.bio h2{
+  display: none;
+}
+
+.intro h2{
+  display: none;
+}
+
+.hero h2{
+  display: none;
+}
+
+.bio {
+  font-size: 1.9rem;
+  padding-bottom: 3rem;
+  color: #C5C5C5;
+  line-height: 160%;
+  font-family: "WellrockSlab";
+  letter-spacing: .15rem;
+  padding-top: 1rem;
+}
+
+.featured {
+  font-family: "Champagne & Limousines";
+  font-size: 7rem;
+  color: #8B8100;
+  text-align: center;
+}
+
+.trunk {
+  background-image: url("../images/mobile-trunk-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  margin-left: 1.5%;
+  margin-right: 0rem;
+}
+
+.trunk h2{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 7rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.trunk h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  letter-spacing: .3rem;
+}
+
+.trunk h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+}
+
+.trunk-image{
+  width: 97%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+}
+
+.other-projects {
+  font-family: "Champagne & Limousines";
+  font-size: 7rem;
+  color: #8B8100;
+  margin-top: 7.1rem;
+  text-align: center;
+}
+
+.other-projects h5{
+  display: none;
+}
+
+.project-one{
+  color: #8B8100;
+  text-align: center;
+}
+
+.project1-text{
+  margin-top: 4rem;
+  background-image: url("../images/mobile-balloon.png");
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  width: 180px;
+  height: auto;
+  text-align: center;
+  margin-left: 1.5%;
+  margin-right: 1.5%;}
+
+
+.project1-text h2{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.project1-text h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2.2rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  letter-spacing: .3rem;
+  text-align: center;
+}
+
+.project1-text h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 3rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.project2-text {
+  background-image: url("../images/mobile-clock.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.project2-text h2{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 6rem;
+  padding-top: 4rem;
+}
+
+.project2-text h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  padding-top: 3rem;
+  padding-bottom: 2.2rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  font-size: 2.5rem;
+  letter-spacing: .3rem;
+}
+
+.project2-text h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 3rem;
+  padding-bottom: 7rem;
+}
+
+footer{
+  background-image: url("../images/mobile-footer-background.png");
+  background-repeat: no-repeat;
+}
+
+.footer-icons h2{
+  display: none;
+}
+
+.footer-connect h2{
+  color: #9486B5;
+  font-family: "Champagne & Limousines";
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  letter-spacing: .35rem
+}
+
+.linkedin {
+  float: left;
+  margin-left: 5.7rem;
+}
+
+.email {
+  float: left;
+  margin-left: 3.7rem;
+}
+
+.twitter {
+  float: left;
+  margin-left: 3.7rem;
+}
+
+.github {
+  float: right;
+  margin-right: 5.7rem;
+}
+
+.designed h4{
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: .1rem;
+  font-family: "WellrockSlab";
+  /* text-align: center; */
+  padding-top: 7rem;
+  padding-bottom: 30rem;
+}
+
+/* Tablets */
+/* @media screen and (min-width: 415px) {
+  body {
+}
+
+{
+    background-image: url("../images/tablet-arrow1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 20rem;
+    align-items: center;
+    padding-bottom: 100rem;
+  }
+
+  .bio {
+    font-size: 2.2rem;
+    padding-bottom: 30rem;
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+    color: #C5C5C5;
+    line-height: 160%;
+    font-family: "WellrockSlab";
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
+  }
+
+  .elena {
+    grid-area: elena;
+    font-size: 6rem;
+    margin-left: 3.8rem;
+    margin-bottom: 4rem;
+    color: #8F8ACD;
+    font-family: "Madeleina Sans";
+    letter-spacing: .2rem;
+  }
+}
+
+} */
+
+/* Tablet */
+/*
+@media screen and (min-width: 575px){
+
+body{
+  font-size: 15px;
+}
+
+.hero {
+  background-image: url("../images/tablet-arrow1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding-bottom: 20rem;
+}
+
+.navigation{
+  color: #8B8100;
+  text-align: right;
+  display:inline-flex;
+  float: right;
+  margin-top: 5.3rem;
+  font-size: 2rem;
+  font-family: "WellrockSlab";
+}
+
+.bio {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  color: #C5C5C5;
+  line-height: 160%;
+  font-family: "WellrockSlab";
+  letter-spacing: .15rem;
+  margin-bottom: 1rem;
+}
+
+.elena {
+  grid-area: elena;
+  font-size: 6rem;
+  margin-left: 3.8rem;
+  margin-bottom: 4rem;
+  color: #8F8ACD;
+  font-family: "Madeleina Sans";
+  letter-spacing: .2rem;
+}
+
+} */
+
+
+
+
+
+
+
+@media screen and (min-width: 991px) {
+  html {
+    font-size: 15px;
+}
+
+.personal-logo{
+  padding-top: 3rem;
+  margin-left: 7.5rem;
+  width: 30%;
+}
+
+hr{
+  width: 27rem;
+}
+
+.navbar {
+  background-image: url("../images/header-background.png");
+  background-size: cover;
+  height: 10.4rem;
+  width: 100%;
+}
+
+.hero {
+  background-image: url("../images/arrow1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+
+.intro {
+  font-size: 6rem;
+  padding-top: 0px;
+  padding-bottom: 0rem;
+  padding-left: 12.5%;
+  color: #8B8100;
+  font-family: "Champagne & Limousines";
+  font-weight: bold;
+  letter-spacing: .35rem;
+  margin-bottom: 2.5rem;
+}
+
+.bio {
+  font-size: 2rem;
+  width: 95%;
+  /* padding-bottom: 1rem; */
+  padding-left: 12.5%;
+  padding-top: 0px;
+  padding-right: 15%;
+  color: #C5C5C5;
+  line-height: 140%;
+  font-family: "WellrockSlab";
+  letter-spacing: .15rem;
+  /* margin-bottom: 1rem; */
+}
+
+.elena {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  color: #8F8ACD;
+  font-family: "Madeleina Sans";
+  letter-spacing: .2rem;
+}
+
+.trunk {
+  float: left;
+  background-image: url("../images/trunk-screenshot.png");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-left: 10%;
+  margin-bottom: 5rem;
+  margin-right: 1%;
+  margin-top:4rem;
+  width: 40%;
+}
+
+.trunk h2{
+  color: #8B8100;
+  margin-left: 1rem;
+  font-family:"Madeleina Sans";
+  font-size: 7rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  width: 10rem;
+  padding-left: 7rem;
+  margin: 0rem;
+}
+
+.trunk h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 3.8rem;
+  letter-spacing: .3rem;
+  /* padding-left: 5rem; */
+  width: 30rem;
+  text-align: center;
+}
+
+.trunk h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.trunk-image {
+  width: 35%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 10%;
+  margin-right: 12%;
+  float: right;
+  /* margin-left: 1rem; */
+}
+
+/* .other-projects h2{
+  font-family: "Champagne & Limousines";
+  font-size: 7.5rem;
+  color: #8B8100;
+  margin-top: 20rem;
+  /* text-align: center; */
+  /* width: 100%; */
+} */
+
+
+
+
+.other-projects {
+  font-family: "Champagne & Limousines";
+  color: #8B8100;
+  margin-top: 20rem;
+  text-align: center;
+  float: none;
+
+}
+
+.project1-text {
+  float: left;
+  background-image: url("../images/balloon.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-left: 12.5%;
+  margin-top: 1rem;
+  width: 36.5%;
+  height: auto;
+}
+
+.other-projects h2{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 50%;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* padding-bottom: 1rem; */
+}
+
+.project-one h2{
+  color: #8B8100;
+  text-align: center;
+  margin-bottom: 5rem;
+  /* float: left; */
+  margin-left: 1rem;
+  font-size: 6rem;
+}
+
+.other-projects h3{
+  color: #fff;
+  float: left;
+  font-family: "Madeleina Sans";
+  font-size: 30%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: .2rem;
+}
+
+.other-projects h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 27%;
+  padding-bottom: 7rem;
+}
+
+.project2-text {
+  float: right;
+  background-image: url("../images/clock.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-right: 12.5%;
+  margin-top: 1rem;
+  width: 36.5%;
+  height: auto;
+}
+
+
+footer{
+    background-image: url("../images/footer-background.png");
+    background-repeat: no-repeat;
+    margin-top: 38rem;
+    width: 100%;
+    background-size: contain;
+}
+
+.footer-connect h2{
+  color: #9486B5;
+  font-family: "Champagne & Limousines";
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 9rem;
+  margin-bottom: 2rem;
+  letter-spacing: .5rem
+}
+
+.linkedin {
+  float: left;
+  margin-left: 30%;
+  width: 5%;
+}
+
+.email {
+  float: left;
+  margin-left: 7%;
+  width: 5%;
+}
+
+.twitter {
+  float: left;
+  margin-left: 7%;
+  width: 5%;
+}
+
+.github {
+  float: right;
+  margin-right: 30%;
+  width: 5%;
+}
+
+.designed h4{
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: .3rem;
+  font-family: "WellrockSlab";
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 7rem;
+}
+}
+
+}
+
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "intro"
+  "elena"
+  "bio";
+  grid-template-columns: 12fr;
+}
+
+.navbar {
+  grid-area: navbar;
+} */
+
+/* .hero {
+  background-image: url("../images/arrow1.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: inherit;
+}
+
+.intro {
+  grid-area: intro;
+  font-size: 9rem;
+  padding-bottom: 1rem;
+  padding-left: 20rem;
+  padding-top: 7rem;
+  color: #8B8100;
+  font-family: "Champagne & Limousines";
+  font-weight: bold;
+  letter-spacing: .35rem;
+}
+
+hr {
+  width: 37%;
+  align-items: left;
+}
+
+.elena {
+  grid-area: elena;
+  font-size: 7.5rem;
+  padding-bottom: 3rem;
+  padding-left: 20rem;
+  margin-bottom: 1rem;
+  color: #8F8ACD;
+  font-family: "Madeleina Sans";
+  letter-spacing: .2rem;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 20rem;
+  padding-bottom: 13rem;
+  color: #ffffff;
+  line-height: 150%;
+  font-family: "WellrockSlab";
+  letter-spacing: .15rem;
+  margin-bottom: 5rem;
+}
+
+.featured-project{
+  font-family: "Champagne & Limousines";
+  font-size: 9rem;
+  color: #8B8100;
+}
+
+.featured {
+  color: #8B8100;
+  text-align: center; */
+/* }
+
+.trunk {
+  float: left;
+  background-image: url("../images/trunk-screenshot.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-left: 18.9rem;
+  margin-top: 8rem;
+}
+
+.trunk-image {
+  float: right;
+  margin-right: 18.9rem;
+  margin-top: 9.4rem;
+  width: 450px;
+  height: auto;
+}
+
+.trunk h1{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 7.5rem;
+  padding-top: 5rem;
+  text-align: center;
+  width: auto;
+}
+
+.trunk h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 3.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  letter-spacing: .3rem;
+}
+
+.trunk h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 3rem;
+  padding-bottom: 7rem;
+}
+
+.other-projects {
+  font-family: "Champagne & Limousines";
+  font-size: 9rem;
+  color: #8B8100;
+  margin-top: 8rem;
+
+}
+
+.project-one{
+  color: #8B8100;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.project1-text {
+  float: left;
+  background-image: url("../images/balloon.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-left: 18.8rem;
+  width: 44rem;
+  height: auto;
+}
+
+.project1-text h1{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 7.5rem;
+  padding-top: 8rem;
+}
+
+.project1-text h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  letter-spacing: .3rem;
+}
+
+.project1-text h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 3rem;
+  padding-bottom: 7rem;
+}
+
+.project2-text {
+  float: right;
+  background-image: url("../images/clock.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-right: 18.8rem;
+  width: 44rem;
+  height: auto;
+}
+
+.project2-text h1{
+  color: #8B8100;
+  font-family:"Madeleina Sans";
+  font-size: 7.5rem;
+  padding-top: 8rem;
+}
+
+.project2-text h3{
+  color: #fff;
+  font-family: "Madeleina Sans";
+  font-size: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  letter-spacing: .3rem;
+}
+
+.project2-text h4{
+  color: #9486B5;
+  font-family: "WellrockSlab";
+  font-size: 3rem;
+  padding-bottom: 7rem;
+}
+
+footer{
+    background-image: url("../images/footer-background.png");
+    background-repeat: no-repeat;
+}
+
+.footer-connect {
+  color: #9486B5;
+  font-family: "Champagne & Limousines";
+  font-weight: bold;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 14rem;
+  margin-bottom: 7.2rem;
+  letter-spacing: .35rem
+}
+
+.linkedin {
+  float: left;
+  margin-left: 34rem;
+}
+
+.email {
+  float: left;
+  margin-left: 9rem;
+}
+
+.twitter {
+  float: left;
+  margin-left: 9rem;
+}
+
+.github {
+  float: right;
+  margin-right: 34rem;
+}
+
+.designed h4{
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: .3rem;
+  font-family: "WellrockSlab";
+  text-align: center;
+  margin-top: 22rem;
+  margin-bottom: 7rem;
+}
+
+@media (min-width: 70rem) {
+  body {
+} */
